@@ -6,19 +6,22 @@ function App() {
     <div className="App">
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <label for="exampleInputEmail1" class="form-label">Tytuł filmu</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" />
+          <label for="exampleInputPassword1" class="form-label">Rodzaj</label><br></br>
+          <select for="exampleSelect" className="form-control">
+            <option value="0"></option>
+            <option value="1">Komedia</option>
+            <option value="2">Obyczajowy</option>
+            <option value="3">Sensacyjny</option>
+            <option value="4">Horror</option>
+          </select>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <button type="submit" class="btn btn-primary">Dodaj</button>
       </form>
     </div>
   );
