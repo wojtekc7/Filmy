@@ -6,12 +6,12 @@ function App() {
     <div className="App">
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Tytuł filmu</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" class="form-text"></div>
+          <label htmlFor="exampleInputEmail1" className="form-label">Tytuł filmu</label>
+          <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <div id="emailHelp" className="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Rodzaj</label><br></br>
+          <label for="exampleInputPassword1" className="form-label">Rodzaj</label><br></br>
           <select for="exampleSelect" className="form-control">
             <option value="0"></option>
             <option value="1">Komedia</option>
@@ -21,7 +21,7 @@ function App() {
           </select>
         </div>
         
-        <button type="submit" class="btn btn-primary">Dodaj</button>
+        <button type="submit" className="btn btn-primary">Dodaj</button>
       </form>
     </div>
   );
